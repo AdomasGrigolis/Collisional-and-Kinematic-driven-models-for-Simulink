@@ -16,7 +16,7 @@ To import models directly from CAD files, SolidWorks (or other major 3D CAD plat
 7. Open 'Forward Kinematics' block and within select 'Get Transform' block. Select the correct [RigidBodyTree](https://uk.mathworks.com/help/robotics/ug/rigid-body-tree-robot-model.html) for your manipulator. If you are using Kinematically driven model, same things needs to be done for 'Inverse Kinematics' block.
 8. Use <code>importrobot('myrobot.slx')</code> [command](https://uk.mathworks.com/help/robotics/ref/importrobot.html) to generate necessary files. This needs to be done every time workspace is reset.
 
-*Collisional model only
+*Collisional model only*
 
 9. You will need to replace the links under 'GB_Collision_Box' subsystem to approariate mechanical files with .stp or .step file extension. Open the subsystem, then click the appropriate side of the box, for example 'Bottom'.
 10. Open rigid body object and change the location of file as appropriate. Repeat this for all sides of the box.
